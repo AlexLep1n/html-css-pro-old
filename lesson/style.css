@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    text-decoration: none;
 }
 
 body {
@@ -40,11 +41,10 @@ body {
 .logo_padding {
     padding-top: 39px;
     padding-bottom: 19px;
-    padding-right: 20px;
 }
 
 .search_padding {
-    padding: 33px 20px 22px;
+    padding: 33px 0 22px;
 }
 
 .nav-right {
@@ -56,19 +56,83 @@ body {
     list-style-type: none;
 }
 
-.menu {}
-
 .menu_padding {
-    padding: 30px 15px 23px;
+    padding: 30px 0 27px;
 }
 
 .profile_padding {
-    padding: 34px 15px 20px;
+    padding: 34px 0 20px;
 }
 
 .basket_padding {
-    padding: 38px 15px 18px;
+    padding: 43px 0 13px;
 }
+
+.profile-margin {
+    margin-bottom: 3px;
+}
+
+.basket-margin {
+    margin-bottom: 10px;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-box {
+    top: 53px;
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 232px;
+    height: 764px;
+    display: none;
+    flex-direction: column;
+}
+
+.menu-list:hover .menu-box {
+    display: flex;
+}
+
+.menu-main-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 37px;
+    padding-bottom: 24px;
+    padding-left: 34px;
+}
+
+.menu-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-left: 33px;
+}
+
+.menu-link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-bottom: 11px;
+    padding-left: 55px;
+}
+
+.menu-link:last-of-type {
+    margin-bottom: 20px;
+}
+
+.menu-link:hover {
+    color: #F16D7F;
+}
+
 
 .header {
     background-color: #F1E4E6;
