@@ -539,11 +539,19 @@ body {
 }
 
 .footer-contacts-block {
-    background: #fff;
+    background-color: #FFFFFF;
     width: 31px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 7px;
+}
+
+.footer-contacts-block:last-of-type {
+    margin-right: 0;
+}
+
+.footer-contacts-block:hover {
+    background-color: #F16D7F;
 }
