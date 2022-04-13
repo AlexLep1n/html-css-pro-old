@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     outline: none;
-    text-decoration: none;
 }
 
 body {
@@ -90,6 +89,12 @@ body {
     flex-direction: column;
 }
 
+.close {
+    position: absolute;
+    top: 16px;
+    left: 203px;
+}
+
 .menu-list:hover .menu-box {
     display: flex;
 }
@@ -123,6 +128,7 @@ body {
     color: #6F6E6E;
     margin-bottom: 11px;
     padding-left: 55px;
+    text-decoration: none;
 }
 
 .menu-link:last-of-type {
@@ -136,7 +142,6 @@ body {
 
 .header {
     background-color: #F1E4E6;
-    margin-bottom: 65px;
 }
 
 .header_back {
@@ -183,6 +188,10 @@ body {
     margin-right: 16px;
 }
 
+.sec_photos {
+    margin-top: 65px;
+}
+
 .photos {
     display: flex;
     justify-content: space-between;
@@ -190,8 +199,12 @@ body {
 }
 
 .photo {
-    background: rgba(33, 22, 22, 0.7);
     position: relative;
+}
+
+.photo-link {
+    display: block;
+    text-decoration: none;
 }
 
 .photo_image {
@@ -219,4 +232,318 @@ body {
 .accesories_text {
     top: 65px;
     left: 490px;
+}
+
+.fetured {
+    margin-top: 96px;
+}
+
+.fetured-heading {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.fetured-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+.item-box {
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 360px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.txt-box {
+    padding: 25px 28px 20px 18px;
+}
+
+.item-heading {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.item-desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+
+.item-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+.item:hover {
+    background: #F8F8F8;
+}
+
+.item:hover .item-pic {
+    filter: brightness(45%);
+}
+
+.link-box {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 188px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 16px 8px 13px;
+    border: 1px solid #FFFFFF;
+    pointer-events: all;
+}
+
+.cart-link:hover {
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.add-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.item:hover .link-box {
+    display: flex;
+
+}
+
+.product-link-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 48.5px;
+}
+
+.product-link {
+    display: block;
+    text-decoration: none;
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    padding: 14px 38px;
+}
+
+.product-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer {
+    margin-top: 95px;
+}
+
+.footer-top {
+    background-color: #222224;
+    padding: 104px 0;
+}
+
+.footer-top-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top_heading {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+}
+
+.footer-top_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.footer-bus-margin {
+    margin-bottom: 28px;
+}
+
+.footer-procent-margin {
+    margin-bottom: 19px;
+}
+
+.footer-crown-margin {
+    margin-bottom: 25px;
+}
+
+.footer-bottom {
+    background-image: url(img/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 87px;
+    padding-bottom: 126px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-bottom-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+    width: 359.45px;
+}
+
+.form-text {
+    margin-top: 63px;
+}
+
+.form-heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.form-paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.form-info {
+    display: flex;
+    margin-top: 32px;
+}
+
+.input-text {
+    background: #E1E1E1;
+    width: 256px;
+    height: 49px;
+    padding-left: 22px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+}
+
+.input-text::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.form-btn {
+    background: #E05C6E;
+    width: 100px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-bottom-back {
+    background: #222224;
+}
+
+.footer-copy-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.link-footer-contact {
+    display: block;
+    padding: 10px;
+}
+
+.footer-contacts-block {
+    background: #fff;
+    width: 31px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
 }
