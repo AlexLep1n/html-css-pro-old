@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     outline: none;
+    text-decoration: none;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Lato';
 }
 
 .container {
@@ -469,6 +470,7 @@ body {
     line-height: 30px;
     color: #222224;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .form-info {
@@ -480,7 +482,6 @@ body {
     background: #E1E1E1;
     width: 256px;
     height: 49px;
-    padding-left: 22px;
     border-radius: 20px 0 0 20px;
     border: none;
     font-weight: 400;
@@ -495,6 +496,7 @@ body {
     line-height: 17px;
     color: #222224;
     opacity: 0.67;
+    padding-left: 22px;
 }
 
 .form-btn {
@@ -554,4 +556,147 @@ body {
 
 .footer-contacts-block:hover {
     background-color: #F16D7F;
+}
+
+.header-arrivals-back {
+    background-color: #F8F3F4;
+}
+
+.arrivals-heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.header-arrivals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 60px;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb-item {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb-item-active {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.breadcrumb-item::before {
+    content: "/\00a0";
+    color: #636363;
+}
+
+.breadcrumb-item:first-of-type:before {
+    content: "";
+}
+
+.breadcrumb-item-active:before {
+    content: "/\00a0";
+    color: #636363;
+    font-weight: 100;
+}
+
+.breadcrumb-item:hover {
+    color: #F16D7F;
+}
+
+.carousel-large-back {
+    background-color: #F7F7F7;
+
+}
+
+.carousel {
+    background-image: url(img/woman-with-chair.jpg);
+    background-position: center;
+    background-size: contain;
+    min-height: 777px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-btn {
+    border: none;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: #000000;
+    font-size: 24px;
+    padding: 12px 17px;
+    background-color: rgba(42, 42, 42, 0.15);
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+    color: #F16D7F;
+}
+
+.prod-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.prod-small-heading {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-top: 64px;
+}
+
+.prod-top-hr {
+    background-color: #F16D7F;
+    width: 63px;
+    height: 3px;
+    margin: 12px 0;
+}
+
+.prod-big-heading {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.prod-paragraph {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    text-align: center;
+    width: 555px;
+    margin-bottom: 32px;
+}
+
+.prod-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.prod-bottom-hr {
+    background-color: #EAEAEA;
+    width: 641px;
+    height: 1px;
+    margin: 65px 0;
 }
