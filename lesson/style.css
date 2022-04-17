@@ -728,6 +728,7 @@ body {
     line-height: 17px;
     color: #6F6E6E;
     padding-right: 9px;
+    text-transform: uppercase;
 }
 
 .fa-angle-down {
@@ -760,6 +761,7 @@ body {
 
 .filter-checkbox {
     margin-top: 51px;
+    display: flex;
 }
 
 .filter-text {
@@ -839,6 +841,50 @@ body {
     margin-bottom: 16px;
 }
 
-.fetured-catalog {
-    margin-top: 64px;
+.catalog-accordion {
+    margin-bottom: 0;
+    margin-left: 304px;
+}
+
+.catalog-size-btn {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.size-box {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 79px;
+    display: none;
+    flex-direction: column;
+    top: 22px;
+    left: -8px;
+    z-index: 2;
+}
+
+.size-line {
+    display: flex;
+    align-items: center;
+    margin: 7px 30px 6px 9px;
+}
+
+.size-line:last-of-type {
+    margin-bottom: 11px;
+}
+
+.size-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    margin-left: 9px;
+}
+
+.catalog-size-btn:hover .size-box {
+    display: flex;
+}
+
+.catalog-fetured {
+    margin-top: 60px;
 }
