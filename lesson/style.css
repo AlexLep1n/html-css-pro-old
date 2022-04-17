@@ -621,7 +621,6 @@ body {
 .carousel {
     background-image: url(img/woman-with-chair.jpg);
     background-position: center;
-    background-size: contain;
     min-height: 777px;
     background-repeat: no-repeat;
     display: flex;
@@ -639,6 +638,7 @@ body {
     font-size: 24px;
     padding: 12px 17px;
     background-color: rgba(42, 42, 42, 0.15);
+    cursor: pointer;
 }
 
 .fa-angle-left:hover,
@@ -650,6 +650,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #EAEAEA;
+    transform: translatey(-64.5px);
+    background-color: #FFFFFF;
 }
 
 
@@ -699,4 +702,143 @@ body {
     width: 641px;
     height: 1px;
     margin: 65px 0;
+}
+
+.accordion {
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.accordion-btn {
+    border: none;
+    background-color: #FFFFFF;
+    margin-right: 23px;
+    display: flex;
+    cursor: pointer;
+}
+
+.accordion-btn:hover .fa-angle-down,
+.accordion-btn:hover .accordion-btn-heading {
+    color: #F16D7F;
+}
+
+.accordion-btn-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-right: 9px;
+}
+
+.fa-angle-down {
+    color: #6F6E6E;
+}
+
+.prod-link-box {
+    margin-bottom: 65px;
+}
+
+.prod-cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 14px 56px 8px 23px;
+    border: 1px solid #FF6A6A;
+}
+
+.prod-cart-link-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    margin-left: 23px;
+}
+
+.prod-fetured {
+    margin-top: 64.5px;
+}
+
+.filter-checkbox {
+    margin-top: 51px;
+}
+
+.filter-text {
+    display: flex;
+    margin-left: 16px;
+    position: relative;
+}
+
+.filter-heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-right: 11px;
+    text-transform: uppercase;
+}
+
+.filter-box {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 360px;
+    display: none;
+    flex-direction: column;
+    top: -13px;
+    left: -16px;
+    z-index: 2;
+}
+
+.filter-text:hover .filter-box {
+    display: flex;
+}
+
+.filter-box-heading {
+    display: flex;
+    margin: 13px 0 16px 16px;
+}
+
+.filter-main-heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    text-transform: uppercase;
+    margin-right: 11px;
+}
+
+.filter-item-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    text-transform: uppercase;
+    padding: 11px 11px;
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 18px;
+    margin-left: 17px;
+}
+
+.filter-item-heading:last-of-type {
+    margin-bottom: 16px;
+}
+
+.filter-link {
+    padding-left: 34px;
+}
+
+.filter-link:first-of-type {
+    margin-top: 6px;
+}
+
+.filter-link:last-of-type {
+    margin-bottom: 24px;
+}
+
+.filter-item-heading:last-of-type {
+    margin-bottom: 16px;
+}
+
+.fetured-catalog {
+    margin-top: 64px;
 }
