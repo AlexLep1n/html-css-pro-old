@@ -585,6 +585,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+    padding-right: 3px;
 }
 
 .breadcrumb-item-active {
@@ -887,4 +888,56 @@ body {
 
 .catalog-fetured {
     margin-top: 60px;
+}
+
+.nav-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    justify-content: center;
+    width: 283px;
+}
+
+.page-item {
+    padding: 15px 0 15px 17px;
+}
+
+.page-item:first-of-type {
+    padding-left: 0;
+}
+
+.page-item:last-of-type {
+    padding-right: 0;
+}
+
+.page-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9F9F9F;
+}
+
+.active-page {
+    color: #EF5B70;
+}
+
+.fa-angle-left-catalog,
+.fa-angle-right-catalog {
+    color: #000000;
+    padding: 0;
+    font-size: 16px;
+    background-color: unset;
+    cursor: auto;
+}
+
+.fa-angle-left-catalog:hover,
+.fa-angle-right-catalog:hover {
+    color: #000000;
 }
