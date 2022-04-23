@@ -510,6 +510,7 @@ body {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer-bottom-back {
@@ -941,3 +942,5 @@ body {
 .fa-angle-right-catalog:hover {
     color: #000000;
 }
+
+@import "registration";
