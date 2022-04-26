@@ -1249,7 +1249,7 @@ body {
   cursor: pointer;
 }
 
-.registration-content__btn__txt {
+.registration-content-btn_txt {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1293,7 +1293,7 @@ body {
   margin-left: 25px;
 }
 
-.registration-content-info__list__item {
+.registration-content-info-list__item {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;

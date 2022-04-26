@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 
-.registration-content__btn__txt {
+.registration-content-btn_txt {
     @include fontfam(400, 14px, 17px);
     text-transform: uppercase;
     color: #FFFFFF;
@@ -114,7 +114,7 @@
     margin-left: 25px;
 }
 
-.registration-content-info__list__item {
+.registration-content-info-list__item {
     @include fontfam(300, 24px, 29px);
     color: #000000;
     margin-bottom: 16px;
