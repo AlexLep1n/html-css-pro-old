@@ -75,21 +75,71 @@
     </div>
     <section class="cart container">
         <div class="cart__cards">
-            <div class="cart-cards__item">
-                <img src="img/cart-man-top.jpg">
-                <img class="cart-close" src="img/close.svg">
-                <div class="cart-cards__txt">
-                    <h4 class="cart-cards-txt__heading">MANGO PEOPLE<br>T-SHIRT</h4>
-                    <ul class="cart-cards-txt__list">
-                        <li class="cart-cards-txt-list__item">Price: <span
-                                class="cart-cards-txt-list__item-mod">$300</span></li>
-                        <li class="cart-cards-txt-list__item">Color: Red</li>
-                        <li class="cart-cards-txt-list__item">Size: Xl</li>
-                        <li class="cart-cards-txt-list__item">Quantity:</li>
+            <div class="cards__item">
+                <a href="product.html">
+                    <img src="img/cart-man-top.jpg">
+                </a>
+                <a href="#">
+                    <img class="cart-close" src="img/cart-close.svg">
+                </a>
+                <div class="cards__txt">
+                    <h4 class="cards-txt__heading">MANGO PEOPLE<br>T-SHIRT</h4>
+                    <ul class="cards-txt__list">
+                        <li class="cards-txt-list__item">Price: <span class="cards-txt-list__item-mod">$300</span></li>
+                        <li class="cards-txt-list__item">Color: Red</li>
+                        <li class="cards-txt-list__item">Size: XL</li>
+                        <li class="cards-txt-list__item">Quantity:
+                            <input class="cards-txt-list-item__input" type="number" value="1" min="1">
+                        </li>
                     </ul>
                 </div>
             </div>
+            <div class="cards__item">
+                <a href="product.html">
+                    <img src="img/cart-man-bot.jpg">
+                </a>
+                <a href="#">
+                    <img class="cart-close" src="img/cart-close.svg">
+                </a>
+                <div class="cards__txt">
+                    <h4 class="cards-txt__heading">MANGO PEOPLE<br>T-SHIRT</h4>
+                    <ul class="cards-txt__list">
+                        <li class="cards-txt-list__item">Price: <span class="cards-txt-list__item-mod">$300</span></li>
+                        <li class="cards-txt-list__item">Color: Red</li>
+                        <li class="cards-txt-list__item">Size: XL</li>
+                        <li class="cards-txt-list__item">Quantity:
+                            <input class="cards-txt-list-item__input" type="number" value="1" min="1">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards__btns">
+                <button class="cards__btn" type="button">
+                    CLEAR SHOPPING CART
+                </button>
+                <button class="cards__btn" type="button">
+                    CONTINUE SHOPPING
+                </button>
+            </div>
         </div>
+        <div class="cart-info">
+            <form class="cart-form" action="#">
+                <h5 class="cart-form__heading">SHIPPING ADRESS</h5>
+                <input class="cart-form__input" type="text" placeholder="Bangladesh">
+                <input class="cart-form__input" type="text" placeholder="State">
+                <input class="cart-form__input" type="text" placeholder="Postcode / Zip">
+                <button class="cart-form__btn" type="button">
+                    GET A QUOTE
+                </button>
+            </form>
+            <div class="cart-offer">
+                <p class="offer__txt-sub">SUB TOTAL <span class="offer__txt-sub-mod">$900</span></p>
+                <p class="offer__txt-grand">GRAND TOTAL <span class="offer__txt-grand-mod">$900</span></p>
+                <div class="offer__hr"></div>
+                <button class="offer__btn">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+
     </section>
     <div class="footer footer-cart">
         <div class="footer-bottom">

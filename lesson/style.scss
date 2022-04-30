@@ -358,17 +358,20 @@ body {
 
 .product-link {
     display: block;
-    text-decoration: none;
-    background: #F16D7F;
+    background: #FFFFFF;
     border: 1px solid #FF6A6A;
     padding: 14px 38px;
-}
-
-.product-p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    color: #F26376;
+    transition: 0.3s;
+}
+
+.product-link:hover {
+    background: #F16D7F;
     color: #FFFFFF;
+    transform: scale(1.1);
 }
 
 .footer {
@@ -511,6 +514,11 @@ body {
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.form-btn:hover {
+    transform: scale(1.1);
 }
 
 .footer-bottom-back {
@@ -536,11 +544,6 @@ body {
     align-items: center;
 }
 
-.link-footer-contact {
-    display: block;
-    padding: 10px;
-}
-
 .footer-contacts-block {
     background-color: #FFFFFF;
     width: 31px;
@@ -549,6 +552,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 7px;
+    transition: 0.3s;
+}
+
+.link-footer-contact {
+    display: block;
+    padding: 10px;
 }
 
 .footer-contacts-block:last-of-type {
@@ -557,6 +566,7 @@ body {
 
 .footer-contacts-block:hover {
     background-color: #F16D7F;
+    transform: scale(1.2);
 }
 
 .header-arrivals-back {
