@@ -1,0 +1,49 @@
+@mixin fontfam($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+.cart {
+    margin-top: 96px;
+}
+
+.cart-close {
+    position: absolute;
+    top: 28px;
+    left: 612px;
+}
+
+.cart-cards__item {
+    display: flex;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.cart-cards__txt {
+    padding: 22px 97px 62px 31px;
+}
+
+.cart-cards-txt__heading {
+    @include fontfam(400, 24px, 29px);
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.cart-cards-txt__list {
+    list-style-type: none;
+}
+
+.cart-cards-txt-list__item {
+    @include fontfam(400, 22px, 26px);
+    color: #575757;
+    margin-bottom: 6px;
+}
+
+.cart-cards-txt-list__item-mod {
+    color: #F16D7F;
+}
+
+.footer-cart {
+    margin-top: 128px;
+}
