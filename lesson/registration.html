@@ -75,30 +75,30 @@
     </div>
     <section class="registration container">
         <div class="registration-content-form">
-            <h4 class="registration-content-form__heading">Your Name</h4>
             <form class="registration-form" action="#">
-                <input class="registration-form__input" type="text" placeholder="First Name">
-                <input class="registration-form__input" type="text" placeholder="Last Name">
+                <h4 class="registration-content-form__heading">Your Name</h4>
+                <input class="registration-form__input" required type="text" placeholder="First Name">
+                <input class="registration-form__input" required type="text" placeholder="Last Name">
                 <div class="registration-form__radio">
-                    <input class="registration-form__radio__input" type="radio" id="Male" name="gender" value="Male">
+                    <input class="registration-form__radio__input" required type="radio" id="Male" name="gender"
+                        value="Male">
                     <label class="registration-form__radio__label" for="Male">Male</label>
-                    <input class="registration-form__radio__input" type="radio" id="Female" name="gender"
+                    <input class="registration-form__radio__input" required type="radio" id="Female" name="gender"
                         value="Female">
                     <label class="registration-form__radio__label" for="Female">Female</label>
                 </div>
+                <h4 class="registration-content-form__heading">Login details</h4>
+                <input class="registration-form__input" required type="email" placeholder="Email">
+                <input class="registration-form__input" required type="password" placeholder="Password">
+                <p class="registration-content__txt">Please use 8 or more characters, with at least 1 number and a
+                    mixture
+                    of
+                    uppercase and lowercase letters</p>
+                <button class="registration-content__btn" type="submit">
+                    <p class="registration-content-btn_txt">JOIN NOW</p>
+                    <i class="fa fa-regular fa-arrow-right-long"></i>
+                </button>
             </form>
-            <h4 class="registration-content-form__heading">Login details</h4>
-            <form class="registration-form" action="#">
-                <input class="registration-form__input" type="email" placeholder="Email">
-                <input class="registration-form__input" type="password" placeholder="Password">
-            </form>
-            <p class="registration-content__txt">Please use 8 or more characters, with at least 1 number and a mixture
-                of
-                uppercase and lowercase letters</p>
-            <button class="registration-content__btn" type="submit">
-                <p class="registration-content-btn_txt">JOIN NOW</p>
-                <img src="img/arrow-right.svg">
-            </button>
         </div>
         <div class="registration-content-info">
             <h3 class="registration-content-info__heading">LOYALTY HAS ITS PERKS</h3>

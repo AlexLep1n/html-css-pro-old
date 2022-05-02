@@ -54,7 +54,7 @@
 .registration-form__radio {
     display: flex;
     align-items: center;
-    margin: 16px 0 33px 0;
+    margin: 11px 0 33px 0;
 }
 
 .registration-form__radio__label {
@@ -79,6 +79,7 @@
     border: none;
     margin-top: 39px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .registration-content-btn_txt {
@@ -86,6 +87,29 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-right: 20px;
+}
+
+.fa-arrow-right-long {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+
+.registration-content__btn:hover {
+    background: #FFFFFF;
+    border: 1px solid #F16D7F;
+    transform: scale(1.1);
+}
+
+.registration-content__btn:hover .registration-content-btn_txt {
+    color: #F16D7F;
+    transform: scale(1.1);
+}
+
+.registration-content__btn:hover .fa-arrow-right-long {
+    color: #F16D7F;
+    transform: scale(1.1);
 }
 
 .registration-content-info {

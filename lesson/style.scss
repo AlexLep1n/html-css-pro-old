@@ -94,6 +94,7 @@ body {
     position: absolute;
     top: 16px;
     left: 203px;
+    cursor: pointer;
 }
 
 .menu-list:hover .menu-box {
@@ -636,7 +637,9 @@ body {
 
 .carousel-large-back {
     background-color: #F7F7F7;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .carousel {
@@ -644,9 +647,6 @@ body {
     background-position: center;
     min-height: 777px;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .carousel-btn {
@@ -660,11 +660,13 @@ body {
     padding: 12px 17px;
     background-color: rgba(42, 42, 42, 0.15);
     cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 .fa-angle-left:hover,
 .fa-angle-right:hover {
     color: #F16D7F;
+    transform: scale(1.2);
 }
 
 .prod-desc {
@@ -725,6 +727,12 @@ body {
     margin: 65px 0;
 }
 
+.accordion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .accordion {
     display: flex;
     margin-bottom: 49px;
@@ -767,6 +775,7 @@ body {
     text-decoration: none;
     padding: 14px 56px 8px 23px;
     border: 1px solid #FF6A6A;
+    transition-duration: 0.3s;
 }
 
 .prod-cart-link-txt {
@@ -775,6 +784,10 @@ body {
     line-height: 19px;
     color: #F26376;
     margin-left: 23px;
+}
+
+.prod-cart-link:hover {
+    transform: scale(1.2);
 }
 
 .prod-fetured {
@@ -896,7 +909,6 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #6F6E6E;
-    text-transform: uppercase;
     margin-left: 9px;
 }
 
