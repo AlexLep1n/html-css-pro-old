@@ -9,8 +9,14 @@ body {
     font-family: 'Lato';
 }
 
+@mixin fontfam($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -27,6 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .nav-left {
@@ -461,7 +468,7 @@ body {
     text-align: center;
     color: #222224;
     margin-top: 30px;
-    width: 359.45px;
+    width: 47%;
 }
 
 .form-text {
@@ -643,10 +650,7 @@ body {
 }
 
 .carousel {
-    background-image: url(img/woman-with-chair.jpg);
-    background-position: center;
     min-height: 777px;
-    background-repeat: no-repeat;
 }
 
 .carousel-btn {
@@ -979,3 +983,261 @@ body {
 @import "registration";
 
 @import "cart";
+
+@media (min-width: 377px) and (max-width: 768px) {
+    .nav_container {
+        margin: 0 32px;
+    }
+
+    .close {
+        left: 170px;
+    }
+
+    .menu-box {
+        z-index: 2;
+    }
+
+    .header-arrivals {
+        margin: auto 16px;
+    }
+
+    .cart {
+        flex-direction: column;
+        margin: 59px 17px 0;
+    }
+
+    .cart__cards {
+        width: 100%;
+    }
+
+    .cards__btns {
+        margin-top: 62px;
+    }
+
+    .cart-close {
+        left: 692px;
+    }
+
+    .cart-info {
+        width: 100%;
+        margin-top: 64px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cart-form {
+        width: 49%;
+        margin-bottom: 0;
+    }
+
+    .cart-form__input {
+        margin-bottom: 20px;
+    }
+
+    .cart-form__input:last-of-type {
+        margin-bottom: 24px;
+    }
+
+    .cart-offer {
+        width: 49%;
+        max-height: 214px;
+        margin-top: 37px;
+    }
+
+    .footer-bottom {
+        padding-top: 54px;
+
+        padding-bottom: 140px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+    }
+
+    .form-text {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-info {
+        margin-top: 27px;
+    }
+
+    .footer-copy-contacts {
+        margin: 0 32px;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .nav_container {
+        margin: 0 16px;
+    }
+
+    .nav-right {
+        justify-content: flex-end;
+    }
+
+    .nav-right__item {
+        display: none;
+    }
+
+    .close {
+        left: 170px;
+    }
+
+    .menu-box {
+        z-index: 2;
+    }
+
+    .header-arrivals {
+        flex-direction: column;
+        padding: 24px 0 46px;
+    }
+
+    .cart-header-arrivals {
+        padding: 50px 0 69px;
+    }
+
+    .breadcrumb {
+        margin-top: 32px;
+    }
+
+    .cart {
+        flex-direction: column;
+        margin: 39px 8px 0;
+    }
+
+    .cart__cards {
+        width: 100%;
+    }
+
+    .cards__item {
+        max-height: 188px;
+        margin-bottom: 32px;
+    }
+
+    .cart-img {
+        max-height: 188px;
+    }
+
+    .cards__txt {
+        padding: 13px 53px 38px 17px;
+    }
+
+    .cards-txt__heading {
+        @include fontfam(400, 16px, 19px);
+        margin-bottom: 25px;
+    }
+
+    .cards-txt-list__item {
+        @include fontfam(400, 14px, 17px);
+        margin-bottom: 4px;
+    }
+
+    .cards-txt-list__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .cards-txt-list-item__input {
+        margin-left: 15px;
+    }
+
+    .cards__btns {
+        margin-top: 32px;
+    }
+
+    .cards__btn {
+        @include fontfam(400, 12px, 14px);
+        padding: 9px 17px;
+        text-transform: none;
+    }
+
+    .cart-close {
+        left: 336px;
+        height: 11px;
+        top: 17px;
+    }
+
+    .cart-info {
+        width: 100%;
+        margin-top: 48px;
+        flex-direction: column;
+
+    }
+
+    .cart-form {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .cart-form__input {
+        margin-bottom: 20px;
+    }
+
+    .cart-form__input:last-of-type {
+        margin-bottom: 24px;
+    }
+
+    .cart-form__btn {
+        font-weight: 400;
+        text-transform: none;
+        padding: 11px 20px;
+    }
+
+    .cart-offer {
+        width: 100%;
+        max-height: 214px;
+        margin-top: 48px;
+    }
+
+    .footer-cart {
+        margin-top: 96px;
+    }
+
+    .footer-bottom {
+        padding-top: 54px;
+        padding-bottom: 109px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+    }
+
+    .footer-bottom-text {
+        @include fontfam(400, 18px, 22px);
+        width: 90%;
+    }
+
+    .form-text {
+        margin-top: 59px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-heading {
+        @include fontfam(700, 24px, 37px);
+    }
+
+    .form-paragraph {
+        @include fontfam(400, 14px, 21px);
+    }
+
+    .form-info {
+        margin-top: 22px;
+    }
+
+    .footer-copy-contacts {
+        flex-direction: column-reverse;
+        padding: 43px 0 24px;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
