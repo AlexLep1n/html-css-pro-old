@@ -148,18 +148,14 @@ body {
     color: #F16D7F;
 }
 
-
 .header {
     background-color: #F1E4E6;
+    max-height: 764px;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-}
-
-.header_img {
-    min-height: 764px;
 }
 
 .header_text {
