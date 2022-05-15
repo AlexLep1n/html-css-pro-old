@@ -153,11 +153,13 @@ body {
     background-color: #F1E4E6;
 }
 
-.header_back {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_img {
     min-height: 764px;
-    background-image: url(img/man.png);
-    background-repeat: no-repeat;
-    background-position: left center;
 }
 
 .header_text {
