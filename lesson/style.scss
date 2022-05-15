@@ -750,6 +750,10 @@ body {
     margin-bottom: 5px;
 }
 
+.accordion-btn-mod {
+    margin-right: 0;
+}
+
 .accordion-btn:hover .fa-angle-down,
 .accordion-btn:hover .accordion-btn-heading {
     color: #F16D7F;
@@ -1001,6 +1005,34 @@ body {
         margin: auto 16px;
     }
 
+    .catalog-fetured {
+        margin: 24px 16px 0 16px;
+    }
+
+    .filter-checkbox {
+        justify-content: space-between;
+    }
+
+    .filter-text {
+        margin-left: 0;
+    }
+
+    .catalog-item-box {
+        margin-top: 40px;
+    }
+
+    .item {
+        margin-bottom: 16px;
+    }
+
+    .catalog-item-media-mod {
+        display: none;
+    }
+
+    .nav-pagination {
+        margin-top: 24px;
+    }
+
     .cart {
         flex-direction: column;
         margin: 59px 17px 0;
@@ -1044,9 +1076,36 @@ body {
         margin-top: 37px;
     }
 
+    .footer {
+        margin-top: 63px;
+    }
+
+    .footer-cart {
+        margin-top: 128px;
+    }
+
+    .footer-top {
+        padding: 48px 0 64px;
+        display: flex;
+    }
+
+    .footer-top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-info {
+        margin-bottom: 48px;
+    }
+
+    .footer-info:last-of-type {
+        margin-bottom: 0;
+    }
+
     .footer-bottom {
         padding-top: 54px;
-
         padding-bottom: 140px;
     }
 
@@ -1099,6 +1158,50 @@ body {
     .header-arrivals {
         flex-direction: column;
         padding: 24px 0 46px;
+    }
+
+    .catalog-fetured {
+        margin: 24px 8px 0 8px;
+    }
+
+    .filter-checkbox {
+        justify-content: space-between;
+    }
+
+    .filter-text {
+        margin-left: 0;
+    }
+
+    .filter-heading {
+        display: none;
+    }
+
+    .filter-img {
+        height: 25px;
+    }
+
+    .catalog-accordion {
+        margin-left: 0;
+    }
+
+    .accordion-btn-heading {
+        @include fontfam(400, 12px, 14px);
+    }
+
+    .catalog-item-box {
+        margin-top: 32px;
+    }
+
+    .item {
+        margin-bottom: 16px;
+    }
+
+    .nav-pagination {
+        margin-top: 24px;
+    }
+
+    .catalog-footer {
+        margin-top: 64px;
     }
 
     .cart-header-arrivals {
@@ -1199,6 +1302,26 @@ body {
 
     .footer-cart {
         margin-top: 96px;
+    }
+
+    .footer-top {
+        padding: 48px 0 81px;
+        display: flex;
+    }
+
+    .footer-top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-info {
+        margin-bottom: 46px;
+    }
+
+    .footer-info:last-of-type {
+        margin-bottom: 0;
     }
 
     .footer-bottom {
