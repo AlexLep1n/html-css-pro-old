@@ -498,8 +498,9 @@ body {
 
 .input-text {
     background: #E1E1E1;
-    width: 256px;
+    width: 234px;
     height: 49px;
+    padding-left: 22px;
     border-radius: 20px 0 0 20px;
     border: none;
     font-weight: 400;
@@ -514,7 +515,7 @@ body {
     line-height: 17px;
     color: #222224;
     opacity: 0.67;
-    padding-left: 22px;
+
 }
 
 .form-btn {
@@ -669,6 +670,7 @@ body {
 .fa-angle-right:hover {
     color: #F16D7F;
     transform: scale(1.2);
+    background-color: rgba(42, 42, 42, 0.15);
 }
 
 .prod-desc {
