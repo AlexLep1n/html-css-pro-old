@@ -69,54 +69,78 @@
         </div>
     </nav>
     <div class="header-arrivals-back">
-        <div class="header-arrivals container">
-            <h3 class="arrivals-heading">REGISTRATION</h3>
+        <div class="header-arrivals cart-header-arrivals container">
+            <h3 class="arrivals-heading">SHOPPING CART</h3>
         </div>
     </div>
-    <section class="registration container">
-        <div class="registration-content-form">
-            <form class="registration-form" action="#">
-                <h4 class="registration-content-form__heading">Your Name</h4>
-                <input class="registration-form__input" required type="text" placeholder="First Name">
-                <input class="registration-form__input" required type="text" placeholder="Last Name">
-                <div class="registration-form__radio">
-                    <input class="registration-form__radio__input" required type="radio" id="Male" name="gender"
-                        value="Male">
-                    <label class="registration-form__radio__label" for="Male">Male</label>
-                    <input class="registration-form__radio__input" required type="radio" id="Female" name="gender"
-                        value="Female">
-                    <label class="registration-form__radio__label" for="Female">Female</label>
+    <section class="cart container">
+        <div class="cart__cards">
+            <div class="cards__item">
+                <a href="product.html">
+                    <img class="cart-img" src="img/cart-man-top.jpg">
+                </a>
+                <a href="#">
+                    <img class="cart-close" src="img/cart-close.svg">
+                </a>
+                <div class="cards__txt">
+                    <h4 class="cards-txt__heading">MANGO PEOPLE<br>T-SHIRT</h4>
+                    <ul class="cards-txt__list">
+                        <li class="cards-txt-list__item">Price: <span class="cards-txt-list__item-mod">$300</span></li>
+                        <li class="cards-txt-list__item">Color: Red</li>
+                        <li class="cards-txt-list__item">Size: XL</li>
+                        <li class="cards-txt-list__item">Quantity:
+                            <input class="cards-txt-list-item__input" type="number" value="1" min="1">
+                        </li>
+                    </ul>
                 </div>
-                <h4 class="registration-content-form__heading">Login details</h4>
-                <input class="registration-form__input" required type="email" placeholder="Email">
-                <input class="registration-form__input" required type="password" placeholder="Password">
-                <p class="registration-content__txt">Please use 8 or more characters, with at least 1 number and a
-                    mixture
-                    of
-                    uppercase and lowercase letters</p>
-                <button class="registration-content__btn" type="submit">
-                    <p class="registration-content-btn_txt">JOIN NOW</p>
-                    <i class="fa fa-regular fa-arrow-right-long"></i>
+            </div>
+            <div class="cards__item">
+                <a href="product.html">
+                    <img class="cart-img" src="img/cart-man-bot.jpg">
+                </a>
+                <a href="#">
+                    <img class="cart-close" src="img/cart-close.svg">
+                </a>
+                <div class="cards__txt">
+                    <h4 class="cards-txt__heading">MANGO PEOPLE<br>T-SHIRT</h4>
+                    <ul class="cards-txt__list">
+                        <li class="cards-txt-list__item">Price: <span class="cards-txt-list__item-mod">$300</span></li>
+                        <li class="cards-txt-list__item">Color: Red</li>
+                        <li class="cards-txt-list__item">Size: XL</li>
+                        <li class="cards-txt-list__item">Quantity:
+                            <input class="cards-txt-list-item__input" type="number" value="1" min="1">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards__btns">
+                <button class="cards__btn" type="button">
+                    Clear shopping cart
+                </button>
+                <button class="cards__btn" type="button">
+                    Continue shopping
+                </button>
+            </div>
+        </div>
+        <div class="cart-info">
+            <form class="cart-form" action="#">
+                <h5 class="cart-form__heading">SHIPPING ADRESS</h5>
+                <input class="cart-form__input" type="text" placeholder="Bangladesh">
+                <input class="cart-form__input" type="text" placeholder="State">
+                <input class="cart-form__input" type="text" placeholder="Postcode / Zip">
+                <button class="cart-form__btn" type="button">
+                    Get a quote
                 </button>
             </form>
-        </div>
-        <div class="registration-content-info">
-            <h3 class="registration-content-info__heading">LOYALTY HAS ITS PERKS</h3>
-            <p class="registration-content-info__txt">Get in on the loyalty program where you can earn points and unlock
-                serious perks. Starting with these as soon as you join:</p>
-            <ul class="registration-content-info__list">
-                <li class="registration-content-info-list__item">15% off welcome offer
-                </li>
-                <li class="registration-content-info-list__item">Free shipping, returns and exchanges on all orders
-                </li>
-                <li class="registration-content-info-list__item">$10 off a purchase on your birthday
-                </li>
-                <li class="registration-content-info-list__item">Early access to products</li>
-                <li class="registration-content-info-list__item">Exclusive offers & rewards</li>
-            </ul>
+            <div class="cart-offer">
+                <p class="offer__txt-sub">SUB TOTAL <span class="offer__txt-sub-mod">$900</span></p>
+                <p class="offer__txt-grand">GRAND TOTAL <span class="offer__txt-grand-mod">$900</span></p>
+                <div class="offer__hr"></div>
+                <button class="offer__btn">PROCEED TO CHECKOUT</button>
+            </div>
         </div>
     </section>
-    <div class="footer">
+    <div class="footer footer-cart">
         <div class="footer-bottom">
             <div class="footer-bottom-content container">
                 <figure class="footer_figure">
